@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Dashboard } from './dashboard/dashboard';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
+  imports: [Dashboard],
+  template: `
+  <app-dashboard>
+  
+  </app-dashboard>
+  `,
   styleUrl: './app.scss'
 })
 export class App {
-  
+
 }
